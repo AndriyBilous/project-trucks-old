@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="container body__wrapper">
+      <nav class="navbar">
+        <div class="nav__container">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <a href="#" class="navbar__logo">
+              <img src="img/logo.svg" alt="logo" class="navbar__logo__img" />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup">
+        <ul class="popup__menu">
+          <li class="list-item">
+            <p>Головна</p>
+          </li>
+          <li class="list-item">
+            <p>Продаж техніки</p>
+          </li>
+          <ul class="navbar__dropdown">
+            <li class="list-item navbar__dropdown__button"><p>Послуги</p></li>
+            <ul class="dropdown__menu">
+              <li class="list-item">
+                <p>asdasds</p>
+              </li>
+              <li class="list-item">
+                <p>Продаж Т/П</p>
+              </li>
+            </ul>
+          </ul>
+
+          <li class="list-item">
+            <p>Контакти</p>
+          </li>
+        </ul>
+      </div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <img src="img/logo.svg" alt="logo" class="header__logo__img" />
+          </div>
+          <div class="header__panel">
+            <div class="header__panel-contacts">
+              <div class="header__contacts">
+                <a href="mailto:mail.example.com"
+                  ><i class="fa-solid fa-envelope-open-text"></i
+                  >mail.example.com</a
+                >
+              </div>
+              <div class="header__contacts">
+                <a href="tel:+380503333333"
+                  ><i class="fa-solid fa-phone"></i>+38(050) 333 33 33</a
+                >
+              </div>
+              <div class="header__contacts">
+                <a href="viber://chat?number=%2B4"
+                  ><i class="fa-brands fa-viber"></i>Вайбер</a
+                >
+              </div>
+            </div>
+            <div class="header__contacts-adress">
+              <p>
+                Наша адреса: Село Гавронщина, Київська область <br />вулиця
+                Шевченка 18
+              </p>
+            </div>
+            <nav class="header__panel__nav">
+              <button class="header__button button"><p>Головна</p></button>
+              <button class="header__button button">
+                <p>Продаж техніки</p>
+              </button>
+              <div class="header__dropdown">
+                <button class="dropdown__button button button__menu">
+                  <p>Послуги<i class="arrow down"></i></p>
+                </button>
+                <div class="dropdown__content">
+                  <a href="#"><p>Довідка рахунок</p></a>
+                  <a href="#"><p>Продаж Т/П</p></a>
+                </div>
+              </div>
+              <button class="header__button button"><p>Контакти</p></button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <!-- Slider -->
+        <div class="image-slider swiper-container page__section_1">
+          <div class="image-slider__wrapper swiper-wrapper">
+            <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="img/main_page_slider_screen-01.jpg" alt="about" />
+              </div>
+            </div>
+            <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="img/main_page_slider_screen-07.jpg" alt="about" />
+              </div>
+            </div>
+            <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+                <img src="img/main_page_slider_screen-05.jpg" alt="about" />
+              </div>
+            </div>
+          </div>
+          <!-- Slider navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="main__reference-buttons page__section_2">
+          <div class="reference-buttons__container">
+            <div class="reference-buttons__wrapper">
+              <a href="#" class="main__reference-link">
+                <i class="fa-solid fa-truck main__reference-bgicon"></i>
+                <span class="main__reference-line"></span>
+                <p class="main__reference-text">Кнопка 1</p>
+              </a>
+              <a href="#" class="main__reference-link">
+                <i
+                  class="fa-solid fa-truck-ramp-box main__reference-bgicon"
+                ></i>
+                <span class="main__reference-line"></span>
+                <p class="main__reference-text">Кнопка 2</p>
+              </a>
+              <a href="#" class="main__reference-link">
+                <i
+                  class="fa-solid fa-wand-magic-sparkles main__reference-bgicon"
+                ></i>
+                <span class="main__reference-line"></span>
+                <p class="main__reference-text">Кнопка 3</p>
+              </a>
+              <a href="#" class="main__reference-link">
+                <i class="fa-solid fa-gears main__reference-bgicon"></i>
+                <span class="main__reference-line"></span>
+                <p class="main__reference-text">Кнопка 4</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main__about page__section_3">
+          <div class="main__about__container">
+            <article class="main__about__info">
+              <h2 class="about__info__label">Про компанію</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique qui omnis, possimus illo voluptatibus
+                deserunt cum et velit in, laudantium consequatur id reiciendis
+                soluta fugiat officia doloremque? Repellendus, distinctio.
+              </p>
+            </article>
+            <img
+              src="img/about_us_01.jpg"
+              alt="Картинка"
+              class="main__about__img"
+            />
+            <!-- <div class="main__about__img"></div> -->
+          </div>
+        </div>
+        <div class="main__servises page__section_4">
+          <div class="servises__container">
+            <div class="servises__description">
+              <h2 class="servises__label">Сервіси</h2>
+              <p class="servises__label-text">
+                Наша компанія надає різноманітні сервіси пов'язані з покупкою
+                або з обслуговуванням техніки
+              </p>
+            </div>
+            <div class="servises__labels__container">
+              <div class="servises__labels">
+                <img
+                  src="img/1.png"
+                  alt="picture"
+                  class="servises__labels-image"
+                />
+                <h3 class="servises__labels-text">Сервис 1</h3>
+              </div>
+              <div class="servises__labels">
+                <img
+                  src="img/1.png"
+                  alt="picture"
+                  class="servises__labels-image"
+                />
+                <h3 class="servises__labels-text">Сервис 2</h3>
+              </div>
+              <div class="servises__labels">
+                <img
+                  src="img/1.png"
+                  alt="picture"
+                  class="servises__labels-image"
+                />
+                <h3 class="servises__labels-text">Сервис 3</h3>
+              </div>
+              <div class="servises__labels">
+                <img
+                  src="img/1.png"
+                  alt="picture"
+                  class="servises__labels-image"
+                />
+                <h3 class="servises__labels-text">Сервис 4</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__contact page__section_5">
+          <div class="main__contact__container">
+            <div class="main__contact__info-container">
+              <div class="main__contact__info">
+                <h2 class="contact__label">Наша адреса</h2>
+              </div>
+              <div class="main__contact-references">
+                <div class="references-adress">
+                  <p>Село Гавронщина, Київська область, вулиця Шевченка 18</p>
+                </div>
+                <div class="references-links">
+                  <a href="tel:+380503333333"
+                    ><i class="fa-solid fa-phone"></i>+38(050) 333 33 33</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="references-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10155.107480001829!2d29.8637248!3d50.4824975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4300de87c6432718!2z0KLQntCSICfQnNCR0Jog0JzQkNCa0JDQoNCG0JIn!5e0!3m2!1sru!2sua!4v1662194663745!5m2!1sru!2sua"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="contact__map"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">footer</footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/405ff1c7fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
